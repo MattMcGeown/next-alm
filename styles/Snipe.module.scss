@@ -1,0 +1,31 @@
+.snipe {
+	position: absolute;
+	top: 8rem;
+	left: -7rem;
+	width: 50rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 0.8rem;
+	transform: rotate(-35deg);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background: var(--snipe-bg);
+	background: -moz-radial-gradient(
+		circle,
+		var(--snipe-bg) 35%,
+		rgba(0, 0, 0, 0.4) 100%
+	);
+	background: -webkit-radial-gradient(
+		circle,
+		var(--snipe-bg) 35%,
+		rgba(0, 0, 0, 0.4) 100%
+	);
+	background: radial-gradient(
+		circle,
+		var(--snipe-bg) 35%,
+		rgba(0, 0, 0, 0.4) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8ac6e5",endColorstr="#000000",GradientType=1);
+	-webkit-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+}
