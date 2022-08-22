@@ -29,3 +29,36 @@
 	-webkit-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 768px) {
+	.snipe {
+		width: 30rem;
+		font-size: 1.5rem;
+		left: -5rem;
+		top: 4.5rem;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.snipe {
+		transform: rotateY(0deg);
+		position: static;
+		width: 100%;
+		text-align: center;
+		background: -moz-radial-gradient(
+			circle,
+			var(--snipe-bg) 35%,
+			rgba(0, 0, 0, 0.4) 180%
+		);
+		background: -webkit-radial-gradient(
+			circle,
+			var(--snipe-bg) 35%,
+			rgba(0, 0, 0, 0.4) 180%
+		);
+		background: radial-gradient(
+			circle,
+			var(--snipe-bg) 35%,
+			rgba(0, 0, 0, 0.4) 180%
+		);
+	}
+}
