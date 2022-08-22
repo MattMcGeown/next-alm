@@ -36,3 +36,29 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.header {
+		background-position: left center;
+
+		.container {
+			.content_wrap {
+				min-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.header {
+		.container {
+			.content_wrap {
+				padding: 0 2rem;
+				text-align: center;
+			}
+			.title {
+				font-size: 2rem;
+			}
+		}
+	}
+}
