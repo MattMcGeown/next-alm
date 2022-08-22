@@ -45,23 +45,27 @@ const Slider = ({ slides }) => {
 							}}
 							key={index}
 							className={styles.slider_item}>
-							{slide.image ? (
-								<Image
-									className={`${styles.slider_item_img} ${styles.border}`}
-									src={slide.image}
-									alt={slide.alt}
-								/>
-							) : (
-								<iframe
-									className={`${styles.slider_item_iframe} ${styles.border}`}
-									src={slide.url}
-									frameBorder='0'
-									allow='accelerometer; autoplay; clipboard-write; encrypted-media;'
-								/>
-							)}
-							<div className={styles.slider_item_copy}>
-								<h2 className={styles.slide_item_title}>{slide.title}</h2>
-								<p className={styles.slide_item_body}>{slide.desc}</p>
+							<div className={styles.slider_item_left}>
+								{slide.image ? (
+									<Image
+										className={`${styles.slider_item_img} ${styles.border}`}
+										src={slide.image}
+										alt={slide.alt}
+									/>
+								) : (
+									<iframe
+										className={`${styles.slider_item_iframe} ${styles.border}`}
+										src={slide.url}
+										frameBorder='0'
+										allow='accelerometer; autoplay; clipboard-write; encrypted-media;'
+									/>
+								)}
+							</div>
+							<div className={styles.slider_item_right}>
+								<div className={styles.slider_item_copy}>
+									<h2 className={styles.slider_item_title}>{slide.title}</h2>
+									<p className={styles.slider_item_body}>{slide.desc}</p>
+								</div>
 							</div>
 						</motion.div>
 					);
