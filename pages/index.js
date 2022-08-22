@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss';
 import { images } from '../public/images/index';
 import { SlideData } from '../data/SlideData';
 import { Links } from '../data/Links';
-import { FAQData } from '../data/FAQ';
+import { FAQData } from '../data/FAQData';
 
 import Header from '../components/Header';
 import Snipe from '../components/Snipe';
