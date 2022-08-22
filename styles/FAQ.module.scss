@@ -65,3 +65,43 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.faq {
+		.container {
+			.faq_items {
+				max-width: 80%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.faq {
+		.container {
+			padding: 0 2rem;
+
+			.faq_items {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.faq {
+		.container {
+			.faq_items {
+				.faq_item {
+					.faq_arrow {
+						right: 0;
+					}
+					.faq_item_title {
+						font-size: 1.4rem;
+						padding-right: 4rem;
+					}
+				}
+			}
+		}
+	}
+}
