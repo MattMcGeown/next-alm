@@ -18,7 +18,9 @@
 				justify-content: space-around;
 				padding: 0 1.5rem;
 				background-color: var(--primary-dark);
-				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+				border-radius: 0.8rem;
+				border: 1px solid var(--al-teal);
+				box-shadow: 0px 0px 6px 0px rgba(var(--teal), 0.2);
 				transition: padding 0.5s ease-in-out;
 
 				&.item_padding {
