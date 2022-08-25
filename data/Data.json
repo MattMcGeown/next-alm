@@ -1,0 +1,124 @@
+[
+	{
+		"badgeLinks": {
+			"googleStore": "https://play.google.com/store/apps/details?id=gg.statespace.aimlab",
+			"appleStore": "https://apps.apple.com/us/app/aim-lab-mobile/id1616550573"
+		},
+		"socialLinks": [
+			{
+				"label": "Discord",
+				"icon": "<FaDiscord />",
+				"position": 1,
+				"url": "http://www.discord.gg/aimlab"
+			},
+			{
+				"label": "Reddit",
+				"icon": "<FaRedditAlien />",
+				"position": 2,
+				"url": "https://www.reddit.com/r/aimlab"
+			},
+			{
+				"label": "Twitter",
+				"icon": "<FaTwitter />",
+				"position": 2,
+				"url": "https://twitter.com/aimlabmobile"
+			},
+			{
+				"label": "Instagram",
+				"icon": "<FaInstagram />",
+				"position": 2,
+				"url": "https://www.instagram.com/aimlabmobile/"
+			},
+			{
+				"label": "Facebook",
+				"icon": "<FaFacebookSquare />",
+				"position": 2,
+				"url": "https://www.facebook.com/AimLabGG/"
+			},
+			{
+				"label": "TikTok",
+				"icon": "<FaTiktok />",
+				"position": 2,
+				"url": "https://www.tiktok.com/@aimlabmobile"
+			},
+			{
+				"label": "YouTube",
+				"icon": "<FaYoutube />",
+				"position": 2,
+				"url": "www.youtube.com/aimlab"
+			}
+		],
+		"logos": {
+			"alLogo": "../images/al_logo_mobile_white.png",
+			"gbadge": "../images/google_badge_cta.png",
+			"abadge": "../images/apple_badge_cta.png"
+		},
+		"altText": {
+			"alAlt": "Aim Lab Mobile Logo",
+			"gbadgeAlt": "Google Play Badge",
+			"abadgeAlt": "Apple Store Badge"
+		},
+		"slideData": [
+			{
+				"url": "https://www.youtube-nocookie.com/embed/_tMnEZhsOp0?rel=0&controls=1&autoplay=0&mute=0&start=0",
+				"alt": "Slide 2",
+				"title": "Train for your favorite mobile fps game",
+				"desc": "Train for your favorite mobile F`PS games with game-specific presets or custom settings like aim assist and controls."
+			},
+			{
+				"url": "../images/presets_5x9.png",
+				"alt": "Slide 2",
+				"title": "Train for your favorite mobile fps game",
+				"desc": "Train for your favorite mobile F`PS games with game-specific presets or custom settings like aim assist and controls."
+			},
+			{
+				"url": "../images/timed_events_16x9.png",
+				"alt": "Slide 2",
+				"title": "Train for your favorite mobile fps game",
+				"desc": "Train for your favorite mobile F`PS games with game-specific presets or custom settings like aim assist and controls."
+			},
+			{
+				"url": "../images/profile_5x9.png",
+				"alt": "Slide 2",
+				"title": "Train for your favorite mobile fps game",
+				"desc": "Train for your favorite mobile F`PS games with game-specific presets or custom settings like aim assist and controls."
+			},
+			{
+				"url": "../images/gridshot_5x9.png",
+				"alt": "Slide 2",
+				"title": "Train for your favorite mobile fps game",
+				"desc": "Train for your favorite mobile F`PS games with game-specific presets or custom settings like aim assist and controls."
+			}
+		],
+		"faqData": [
+			{
+				"question": "How do I submit bug reports and / or feedback for Aim Lab Mobile?",
+				"answer": "Please follow these steps to send us your feedback. Open Settings by clicking the gear icon in the top right corner of the home screen. Click Submit a bug in the lower left corner. You can enter your email (optional) and a comment that explains the issue you're having or any thoughts you'd like to share with us. If you're submitting a bug report, a player log will automatically be sent as part of your submission to help our developers understand the nature of the issue. Remember to be as descriptive as possible so we can identify any issues and help you to the best of our ability!"
+			},
+			{
+				"question": "When will Aim Lab Mobile officially release?",
+				"answer": "Aim Lab Mobile is available now globally (except China and Russia) as a Public Beta and represents the core experience of the game. That said, the team is hard at work developing new features and content, and we will be sharing more information about those upcoming updates in the near future."
+			},
+			{
+				"question": "Where can I download Aim Lab Mobile?",
+				"answer": "You can download the Google Play Store and Apple App Store"
+			},
+			{
+				"question": "What are the minimum device requirements to play Aim Lab Mobile?",
+				"answer": "650MB Free Storage. 2GB RAM. Android 5.1 or newer. iOS 11.0 or newer"
+			},
+			{
+				"question": "Can I use my Aim Lab PC profile?",
+				"answer": "Yes, your Aim Lab PC profile can be used to log in to Aim Lab Mobile. However, your rank, progression and leaderboards are platform-specific and will not cross over so your Mobile achievements will differ from those on PC."
+			},
+			{
+				"question": "Can I use my Aim Lab PC profile?",
+				"answer": "Yes, while the application doesn't currently support UI navigation, you can play tasks with a controller in Aim Lab Mobile as long as it's connected to your device."
+			},
+			{
+				"question": "Which languages does Aim Lab Mobile support?",
+				"answer": "Aim Lab Mobile supports English, German, Italian, Spanish, French, Portuguese, Mandarin, Japanese, and Korean."
+			}
+		]
+	}
+]
