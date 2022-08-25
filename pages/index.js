@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
-import { images } from '../public/images/index';
-import { SlideData } from '../data/SlideData';
-import { Links } from '../data/Links';
-import { FAQData } from '../data/FAQData';
+import data from '../data/Data.json';
+// import { SlideData } from '../data/SlideData';
+// import { Links } from '../data/Links';
+// import { FAQData } from '../data/FAQData';
 
 import Header from '../components/Header';
 import Snipe from '../components/Snipe';
@@ -11,7 +11,7 @@ import Slider from '../components/Slider';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Home(props) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -20,10 +20,27 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Snipe title={'Play for free'} />
-			<Header image={images} title={'Improve your aim now'} links={Links} />
-			<Slider slides={SlideData} />
-			<FAQ title={'Frequently Asked Questions'} data={FAQData} />
+			<Header
+				image={props.image}
+				altText={props.altText}
+				title={'Improve your aim now'}
+				links={props.badgeLinks}
+			/>
+			<Slider slideData={props.slideData} />
+			<FAQ title={'Frequently Asked Questions'} faqData={props.faqData} />
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	return {
+		props: {
+			badgeLinks: data[0].badgeLinks,
+			image: data[0].logos,
+			altText: data[0].altText,
+			slideData: data[0].slideData,
+			faqData: data[0].faqData,
+		},
+	};
 }

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import styles from '../styles/FAQ.module.scss';
 
-const FAQ = ({ title, data }) => {
+const FAQ = ({ title, faqData }) => {
 	const [open, setOpen] = useState(null);
 
 	const handleToggle = (i) => {
@@ -15,7 +15,7 @@ const FAQ = ({ title, data }) => {
 			<div className={styles.container}>
 				<h2 className={styles.title}>{title}</h2>
 				<div className={styles.faq_items}>
-					{data.map((item, index) => {
+					{faqData.map((item, index) => {
 						return (
 							<div
 								className={`${styles.faq_item} ${

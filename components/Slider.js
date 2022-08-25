@@ -5,19 +5,19 @@ import Image from 'next/image';
 import styles from '../styles/Slider.module.scss';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const Slider = ({ slides }) => {
+const Slider = ({ slideData }) => {
 	const [x, setX] = useState(0);
 	const [currentSlide, setCurrentSlide] = useState(0);
-	const length = slides.length;
+	const length = slideData.length;
 
 	const nextSlide = () => {
 		setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
-		x === -100 * (slides.length - 1) ? setX(0) : setX(x - 100);
+		x === -100 * (slideData.length - 1) ? setX(0) : setX(x - 100);
 	};
 
 	const prevSlide = () => {
 		setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
-		x === 0 ? setX(-100 * (slides.length - 1)) : setX(x + 100);
+		x === 0 ? setX(-100 * (slideData.length - 1)) : setX(x + 100);
 	};
 
 	return (
@@ -33,7 +33,7 @@ const Slider = ({ slides }) => {
 					className={`${styles.slider_arrow} ${styles.slider_arrow__right}`}
 					onClick={nextSlide}
 				/>
-				{slides.map((slide, index) => {
+				{slideData.map((slide, index) => {
 					return (
 						<motion.div
 							initial={{ x: 0 }}
@@ -49,7 +49,7 @@ const Slider = ({ slides }) => {
 								{slide.image ? (
 									<Image
 										className={`${styles.slider_item_img} ${styles.border}`}
-										src={slide.image}
+										src={slide.url}
 										alt={slide.alt}
 									/>
 								) : (
