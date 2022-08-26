@@ -33,6 +33,7 @@ export default function Home(props) {
 	);
 }
 
+// SSR
 export async function getStaticProps() {
 	return {
 		props: {
@@ -42,5 +43,7 @@ export async function getStaticProps() {
 			slideData: data[0].slideData,
 			faqData: data[0].faqData,
 		},
+		// Validate data every X seconds once built - prevent serving outdated data once deployed
+		revalidate: 3600,
 	};
 }
